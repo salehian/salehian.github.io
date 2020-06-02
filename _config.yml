@@ -1,14 +1,14 @@
 # Site settings
-title: Mohammad Ali Salehian 
+title: Mohammad Ali Salehian
 description: Mohammad Ali Salehian
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: Mohammad Ali Salehian 
-user_description: I'm a mobile Software Developer, always searching for the next challenge; no task is too scary nor too difficult. Lately I have been immersed Artificial intelligence ...
-user_title: Software Engineer
-email: salehian.mao@gmail.com
+username: Mohammad Ali Salehian
+user_description: I'm a mobile Software Developer, always searching for the next challenge; no task is too scary nor too difficult. Lately I have been immersed in developing Artificial Intelligence ...
+user_title: Software Developer
+email: salehian.ma@gmail.com
 # twitter_username: lorem_ipsum
 # github_username:  lorem_ipsum
 # gplus_username:  lorem_ipsum
