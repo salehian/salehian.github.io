@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-<html lang="en">
-  {% include head.html %}
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-pL6UJXTmZT6feZUBF2nLa6TuLg6eKj6EoC6CHXUg1sUzJPdZ1zjZzN4J4q3qQ2n/6xQyRXCX9nS+D/ZQo0bLQQ==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+  </head>
   <body>
-      {% include header.html %}
-      <section id="about">
-        {% include about.html %}
-      </section>
-        {{ content }}
-      {% include footer.html %}
+    <header>
+      <h1>{{ site.title }}</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/blog/">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      <p>&copy; {{ site.title }} {{ site.email }}</p>
+    </footer>
   </body>
 </html>
