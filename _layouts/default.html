@@ -1,19 +1,42 @@
-<!DOCTYPE html>
+
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: hidden;
+    }
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #0d0d0d;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+  </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-pL6UJXTmZT6feZUBF2nLa6TuLg6eKj6EoC6CHXUg1sUzJPdZ1zjZzN4J4q3qQ2n/6xQyRXCX9nS+D/ZQo0bLQQ==" crossorigin="anonymous" />
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
   </head>
   <body>
+  <script src="{{ site.baseurl }}/assets/js/app.js"></script>
     <header>
+      <div id="particles-js"></div>
+      <script src="{{ site.baseurl }}/assets/js/particles.js"></script>
       <h1>{{ site.title }}</h1>
+      <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/msalehian"><i class="icon fab fa-linkedin-square" aria-hidden="true"></i></a>
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/about/">About</a></li>
           <li><a href="/blog/">Blog</a></li>
-          <li><a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/msalehian"><i class="icon fab fa-linkedin-square" aria-hidden="true"></i></a></li>
         </ul>
       </nav>
     </header>
