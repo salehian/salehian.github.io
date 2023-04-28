@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/favicon.ico" >
+    <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+    <!-- <title>{{ page.title }}</title> -->
+    <title>Mohammad Ali Salehian</title>
     <style>
     body {
       margin: 0;
@@ -21,25 +25,50 @@
       background-size: cover;
       background-position: 50% 50%;
     }
+    .content {
+      position: absolute;
+      top: 4%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      color: white;
+      font-size: 24px;
+    }
+    .navbar-dark.bg-dark {
+      background-color: #0d0d0d;
+      }
   </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-pL6UJXTmZT6feZUBF2nLa6TuLg6eKj6EoC6CHXUg1sUzJPdZ1zjZzN4J4q3qQ2n/6xQyRXCX9nS+D/ZQo0bLQQ==" crossorigin="anonymous" />
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+  
   </head>
   <body>
+  <script src="{{ site.baseurl }}/assets/js/particles.js"></script>
   <script src="{{ site.baseurl }}/assets/js/app.js"></script>
-    <header>
-      <div id="particles-js"></div>
-      <script src="{{ site.baseurl }}/assets/js/particles.js"></script>
-      <h1>{{ site.title }}</h1>
-      <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/msalehian"><i class="icon fab fa-linkedin-square" aria-hidden="true"></i></a>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="/blog/">Blog</a></li>
+    <div id="particles-js">
+          <div class="content">
+            <h1 style="font-family:Impact">Mohammad Ali Salehian</h1>
+          </div>
+        </div>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-bottom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://salehian.github.io/resume/">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://celestialmatrix.onrender.com">OCR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </div>
+  </nav>
     <main>
       {{ content }}
     </main>
