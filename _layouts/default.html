@@ -15,6 +15,25 @@
       height: 100vh;
       overflow: hidden;
     }
+    /* Default styles for all devices */
+    h1 {
+      font-size: 24px;
+      font-family: Impact;
+    }
+
+    /* Styles for smaller screens like iPhone SE */
+    @media screen and (max-width: 320px) {
+      h1 {
+        font-size: 18px;
+        font-family: Impact;
+      }
+  }
+  @font-face {
+    font-family: 'Impact';
+    src: url('{{ site.baseurl }}/assets/fonts/Impact.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
     #particles-js {
       position: absolute;
       width: 100%;
